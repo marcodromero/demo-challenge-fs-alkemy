@@ -1,6 +1,6 @@
 import { Navbar } from "./components/Navbar";
-import { Redirect, Route, Switch, Router} from "wouter";
-import { useHashLocation } from "wouter/use-hash-location";
+import { Redirect, Route, Switch, Router } from "wouter";
+
 import { React, useEffect} from "react";
 import { useAuthStore } from "./store/authStore";
 import { Login } from "./pages/Login";
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <main style={{ backgroundColor: "#4cbcbf" }}>
-       <Router base="/demo-challenge-fs-alkemy" hook={useHashLocation}>
+       <Router base="/demo-challenge-fs-alkemy" >
       <Switch>
         <Route path="/">        
           {isAuthenticated
