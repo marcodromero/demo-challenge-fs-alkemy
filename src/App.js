@@ -1,5 +1,5 @@
 import { Navbar } from "./components/Navbar";
-import { Redirect, Route, Switch, useLocation } from "wouter";
+import { Redirect, Route, Switch, Router} from "wouter";
 import { React, useEffect} from "react";
 import { useAuthStore } from "./store/authStore";
 import { Login } from "./pages/Login";
@@ -9,7 +9,7 @@ import { Register } from "./pages/Register";
 
 function App() {
   const { isAuthenticated, validateToken} = useAuthStore();
-  const [location, setLocation] = useLocation({ base: "/demo-challenge-fs-alkemy" });
+  
 
   useEffect(()=>{
     validateToken();
@@ -17,6 +17,7 @@ function App() {
 
   return (
     <main style={{ backgroundColor: "#4cbcbf" }}>
+       <Router base="/demo-challenge-fs-alkemy">
       <Switch>
         <Route path="/">        
           {isAuthenticated
@@ -49,6 +50,7 @@ function App() {
           <Redirect to="/" />
         </Route>
       </Switch>
+      </Router>
     </main>
   );
 }
