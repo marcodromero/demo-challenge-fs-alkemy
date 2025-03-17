@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/demo-challenge-fs-alkemy/static/css/main.5806837f.css",
-    "main.js": "/demo-challenge-fs-alkemy/static/js/main.c346b02b.js",
+    "main.js": "/demo-challenge-fs-alkemy/static/js/main.cefb59dc.js",
     "static/media/cover_tiny.jpg": "/demo-challenge-fs-alkemy/static/media/cover_tiny.16340f56bf78d67d6561.jpg",
     "index.html": "/demo-challenge-fs-alkemy/index.html",
     "main.5806837f.css.map": "/demo-challenge-fs-alkemy/static/css/main.5806837f.css.map",
-    "main.c346b02b.js.map": "/demo-challenge-fs-alkemy/static/js/main.c346b02b.js.map"
+    "main.cefb59dc.js.map": "/demo-challenge-fs-alkemy/static/js/main.cefb59dc.js.map"
   },
   "entrypoints": [
     "static/css/main.5806837f.css",
-    "static/js/main.c346b02b.js"
+    "static/js/main.cefb59dc.js"
   ]
 }
